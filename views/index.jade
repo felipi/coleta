@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  span
+    if user
+      span Welcome, #{user.username}!
+    else
+      a(href="/auth/facebook") Login with facebook
+
+  h1= title
+  #content
+    p The people who are using Coleta are:
+    ul
+      for auser in users
+        li= auser.username
