@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  span
+    if user
+      span Welcome, #{user.username}!
+        a(href="/logout") Logout
+  
+  if user
+    h1 #{title}, #{user.username}!
+  else
+    h1 You are not logged in. 
+      a(href="/auth/facebook") Do it!
+  if user
+      #content
+        span Here, you can manage your records. Start looking at your Categories and Types of record.
+        br
+        a() Categories
+          a() Types 
+        br
+        for category in categories
+          span= category
+    

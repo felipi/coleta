@@ -35,3 +35,13 @@ exports.userlist = function userlist(callback){
         }
     });
 }
+
+exports.userExists = function userExists(fbid, result){
+    var User = mongoose.model("User");
+
+    User.find({"facebookId":fbid}, function(err,list){
+        if(err)console.log(err);
+        else
+            result(list.length > 0);
+    });
+}

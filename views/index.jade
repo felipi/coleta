@@ -3,7 +3,8 @@ extends layout
 block content
   span
     if user
-      span Welcome, #{user.username}!
+      span Welcome, #{user.username}! 
+        a(href="/logout") Logout
     else
       a(href="/auth/facebook") Login with facebook
 

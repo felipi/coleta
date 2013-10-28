@@ -56,10 +56,13 @@ passport.use(new FacebookStrategy({
 ));
 
 app.get('/', routes.index);
+app.get('/dashboard', routes.dashboard);
+app.get('/users/:id/category/:category', routes.userCategory);
+app.get('/users/:id/list/:list', routes.userList);
 //app.get('/users', user.list);
 app.get("/auth/facebook", passport.authenticate("facebook"));
 app.get("/auth/facebook/callback",
-        passport.authenticate("facebook", {successRedirect: "/",
+        passport.authenticate("facebook", {successRedirect: "/dashboard",
                                             failureRedirect: "/login"} ));
 app.get("/logout", function(req, res){ 
     req.logout();
