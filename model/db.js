@@ -1,4 +1,7 @@
 var mongoose = require("mongoose");
+var MongoClient = require('mongodb').MongoClient
+      , format = require('util').format;
+
 
 exports.userCategories = function userCategories(fbuser, callback){
     if(!fbuser) return;
@@ -47,8 +50,44 @@ exports.userRecordsForList = function(user, list, callback){
     });
 };
 
+exports.updateRecord = function(user, id, field, value, callback){
+    console.log(user);
+    var ObjectID = require("mongodb").ObjectID;
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        if(err) throw(err);
+        var Records = db.collection("records");
+
+        param = {};
+        param[field] = value;
+        Records.update({ "_id" : ObjectID(id)},
+                       {$set : param} ,
+                       {upsert: false},
+                       function(err){
+            callback("OK");
+       });
+    });
+    /* 
+    Record.findOne({"_id":id}, function(err, record){
+    console.log("The records is " + record);
+    param = {};
+    param[field] = value;
+        record.update({$set: param}, {upsert:false}, function(err, result) {
+            if (err) {
+                console.log(err);
+                return handleError(err);
+            }
+            record.markModified(field);
+            console.log(record.modifiedPaths() );
+            record.save();
+            console.log("OK");
+            callback("OK");
+        });
+    });
+    */
+}
+
 var recordSchema = mongoose.Schema({
-    ofMixed : mongoose.Schema.Types.Mixed
+    object : mongoose.Schema.Types.Mixed
 }, {collection: "records"});
 
 var Record = mongoose.model("Record", recordSchema);

@@ -59,6 +59,8 @@ app.get('/', routes.index);
 app.get('/dashboard', routes.dashboard);
 app.get('/users/:id/category/:category', routes.userCategory);
 app.get('/users/:id/list/:list', routes.userList);
+//app.get('/app/update/:id/:field/:value', routes.updateRecord);
+app.post('/records/update', routes.updateRecord);
 //app.get('/users', user.list);
 app.get("/auth/facebook", passport.authenticate("facebook"));
 app.get("/auth/facebook/callback",

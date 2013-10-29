@@ -10,6 +10,16 @@ block content
             "iDisplayLength" : -1,
              }
           );
+        $('.dataTable tbody tr td').editable(function(value, settings) { 
+             var field = $(this).attr("name");
+             var id =  $(this).closest("tr").attr("id");
+             //console.log(settings);
+            $.post("/records/update", {"id":id, "field":field, "value":value}).done(
+                 function(data){
+                    console.log(data);
+            }); 
+             return(value);
+         });
         });
 
   span
@@ -35,4 +45,4 @@ block content
               - var _id = JSON.parse(JSON.stringify(record))['_id']
                 tr(id=_id) 
                     - for field in fields
-                        td= JSON.parse(JSON.stringify(record))[field]
+                        td(name=field)= JSON.parse(JSON.stringify(record))[field]

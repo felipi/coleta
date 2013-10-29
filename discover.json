@@ -1,0 +1,740 @@
+[
+    {
+        "band": "Chiasm",
+        "genres": "Industrial",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Darling Violetta",
+        "genres": "Dark Pop",
+        "recommended": "Nani",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Music Go Music",
+        "recommended": "Nani",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Hooverphonic",
+        "recommended": "Nani",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Morcheeba",
+        "recommended": "Carine",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Groove Armada",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Mike Oldfield",
+        "genres": "New Age Prog",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Agalloch",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Fantômas",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Angelo Badalamenti",
+        "genres": "Film, Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Marcus Fjellström",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Gushi & Raffunk",
+        "genres": "Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Elegi",
+        "genres": "Dark Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Hecq",
+        "genres": "Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "UFO",
+        "genres": "Space Rock",
+        "recommended": "Tamires Lopes",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "The Churchills",
+        "genres": "Heavy Prog",
+        "similar": "Jericho",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Alcest",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Air",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Karnivool",
+        "recommended": "Miig",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Dead Letter Circus",
+        "recommended": "Miig",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Sylosis",
+        "recommended": "Miig",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Mestis",
+        "recommended": "Miig",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Paatos",
+        "recommended": "Tamires Lopes",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Pelican",
+        "genres": "Post-Metal",
+        "similar": "Sunn O)))",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Black Merda",
+        "genres": "Psychedelic Funk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Gandalf",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Grateful Dead",
+        "genres": "Psychedelic Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Henry Cow",
+        "genres": "Avant-Rock, RIO",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Osanna",
+        "genres": "Rock Progressivo Italiano",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Várias (Hatfield and the North, Camel, Caravan, Soft Machine...)",
+        "genres": "Canterbury Scene",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Grails",
+        "genres": "Post-Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Brian Eno",
+        "genres": "Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Aphex Twin",
+        "genres": "Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Mike Oldfield",
+        "genres": "New Age, Prog Rock, Krautrock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Burzum",
+        "genres": "Black Metal, Dark Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Behemoth",
+        "genres": "Blackened Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Dark Tranquility",
+        "genres": "Melodic Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Carcass",
+        "genres": "Melodic Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Nile",
+        "genres": "Technical Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Edge of Sanity",
+        "genres": "Technical Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Atheist",
+        "genres": "Fusion Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Cynic",
+        "genres": "Fusion Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Arkona",
+        "genres": "Pagan Folk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Earth",
+        "genres": "Drone",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Thanassis Papakonstantinou",
+        "genres": "Folk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Vespas Mandarinas",
+        "genres": "Indie Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Chrome Hoof",
+        "genres": "Funk, Progressive, Jazz",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Neurofunk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Doom Funk",
+        "link": "http://bandcamp.com/tag/doom-funk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Dark Ambient",
+        "link": "https://en.wikipedia.org/wiki/List_of_dark_ambient_artists",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Dark Funk",
+        "link": "http://www.last.fm/tag/dark%20funk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Folk",
+        "similar": "Deolinda",
+        "link": "http://www.last.fm/music/Deolinda/+similar",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Empyrium",
+        "genres": "Neofolk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Samsara Blues Experiment",
+        "genres": "Stoner",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Litfiba",
+        "genres": "Hard Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Afterhours",
+        "genres": "Alternative Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "György Ligeti",
+        "genres": "Contemporary Classical",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Negrita",
+        "genres": "Alternative Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Tame Impala",
+        "genres": "Space Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Kadavar",
+        "genres": "Stoner",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Om",
+        "genres": "Doom",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Sweet Smoke",
+        "genres": "Jazz Rock, Prog",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Rodan",
+        "genres": "Funk Rock, Prog",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Modest Mouse",
+        "genres": "Indie Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Hypnos 69",
+        "genres": "Prog, Stoner, Space Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Dün",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Magma",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Weidorje",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Universal Totem Orchestra",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Bondage Fruit",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Koenjihyakkei",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Runaway Totem",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Amygdala",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Rhùn",
+        "genres": "Zeuhl",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Kayo Dot",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Drone",
+        "link": "http://en.wikipedia.org/wiki/List_of_drone_artists",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Grunge",
+        "link": "https://en.wikipedia.org/wiki/List_of_grunge_albums",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "genres": "Post-Grunge",
+        "link": "https://en.wikipedia.org/wiki/List_of_post-grunge_bands",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Sigh",
+        "country": "Japan",
+        "genres": "Black Metal, Progressive Metal",
+        "similar": "Gonin-Ish",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "ESA KOTILAINEN",
+        "genres": "Space Rock, Ambient",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Sur Generis",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Gustavo Cerati",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Fito Paez",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Ultragalana",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Parte Planeta",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Sistemática",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Miro y Su Fabulosa Orquestra de Juguete",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Señorita Carolina",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Friola",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Soda Stereo",
+        "country": "Argentina",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Ananda Shankar",
+        "country": "India",
+        "genres": "Folk Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Anousha Shankar",
+        "country": "India",
+        "genres": "Folk",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Motherjane",
+        "country": "India",
+        "genres": "Prog Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Reptilian Death",
+        "country": "India",
+        "genres": "Technical Death Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Agam",
+        "country": "India",
+        "genres": "Prog Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Indus Creed",
+        "country": "India",
+        "genres": "Prog Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Advaita",
+        "country": "India",
+        "genres": "Alt. Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Amogh Symphony",
+        "country": "India",
+        "genres": "Prog Metal",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Ec{c}entric Pendumlum",
+        "country": "India",
+        "genres": "Technical Death Metal, Djent",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Indian Ocean",
+        "country": "India",
+        "genres": "Fusion",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Avial",
+        "country": "India",
+        "genres": "Alt. Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Thermal and a Quarter",
+        "country": "India",
+        "genres": "Blues Rock",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "Mike Cohen",
+        "genres": "Kirtan",
+        "recommended": "Ribeiro",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    },
+    {
+        "band": "The XX",
+        "user": "1505023526",
+        "category": "Discover",
+        "type": "Music"
+    }
+]

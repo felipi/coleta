@@ -90,3 +90,16 @@ exports.userList = function(req, res) {
        }
    });
 }
+
+//UPDATE RECORD
+exports.updateRecord = function(req, res) {
+    user = req.user;
+    recordId = req.body.id;
+    recordField = req.body.field;
+    newValue = req.body.value;
+
+    console.log(recordId);
+    db.updateRecord(user, recordId, recordField, newValue, function(results){
+       res.send(results); 
+    });
+}
