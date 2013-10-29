@@ -45,3 +45,12 @@ exports.userExists = function userExists(fbid, result){
             result(list.length > 0);
     });
 }
+
+var userSchema = mongoose.Schema({
+    facebookId: String,
+    username: String
+}, {collection: "users"});
+
+var User = mongoose.model("User", userSchema);
+
+mongoose.connect("mongodb://localhost/coleta");

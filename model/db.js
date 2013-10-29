@@ -1,36 +1,53 @@
-var mongoose = require("mongoose");
 var MongoClient = require('mongodb').MongoClient
       , format = require('util').format;
-
+var ObjectID = require("mongodb").ObjectID;
 
 exports.userCategories = function userCategories(fbuser, callback){
     if(!fbuser) return;
-    Category.distinct("name", {"user": fbuser.facebookId}, function(err, categories){
-        if (err) return handleError(err);
-        callback(categories);
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        var Categories = db.collection("categories");
+        Categories.distinct("name", {"user": fbuser.facebookId}, function(err, categories){
+            if (err) return handleError(err);
+            db.close();
+            callback(categories);
+        });
     });
 }
 
 exports.userRecordsForCategory = function(user, category, callback){
-    Record.find({"user":user, "category":category}, function(err, results){
-        if(err) return handleError(err)
-        callback(results);
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        var Records = db.collection("records");
+        Records.find({"user":user, "category":category}).toArray( function(err, results){
+            if(err) return handleError(err)
+
+            db.close();
+            callback(results);
+        });
     });
 }
 
 exports.userCategoryFields = function(user, category, callback){
-    Category.find({"user":user, "name":category}, {"fields":1, "_id":0}, function(err, results){
-        if(err) return handleError(err)
-        console.log("Category fields:" + results);
-        callback(results);
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        var Categories = db.collection("categories");
+        Categories.find({"user":user, "name":category}, {"fields":1, "_id":0}).toArray( function(err, results){
+            if(err) return handleError(err)
+            console.log("Category fields:" + results);
+            db.close();
+            callback(results);
+        });
     });
 }
 
 exports.userListData = function(user, list, callback){
-    List.find({"user": user, "name":list} , function(err, results){
-        if(err) return handleError(err)
 
-        callback(results);
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        var Lists = db.collection("lists");
+        Lists.find({"user": user, "name":list}).toArray(function(err, results){
+            if(err) return handleError(err)
+
+            db.close();
+            callback(results);
+        });
     });
 }
 
@@ -42,17 +59,20 @@ exports.userRecordsForList = function(user, list, callback){
     filters = list[0].filters;
     filters.user = user;
 
-    console.log(fields);
-    Record.find(filters, fields, function(err, results){
-        if(err) return handleError(err)
-        
-        callback(results);
+    MongoClient.connect("mongodb://localhost/coleta", function(err,db){
+        var Records = db.collection("records");
+        Records.find(filters, fields).toArray( function(err, results){
+            if(err) return handleError(err)
+            
+            console.log(results);
+            db.close();
+            callback(results);
+        });
     });
 };
 
 exports.updateRecord = function(user, id, field, value, callback){
     console.log(user);
-    var ObjectID = require("mongodb").ObjectID;
     MongoClient.connect("mongodb://localhost/coleta", function(err,db){
         if(err) throw(err);
         var Records = db.collection("records");
@@ -63,67 +83,8 @@ exports.updateRecord = function(user, id, field, value, callback){
                        {$set : param} ,
                        {upsert: false},
                        function(err){
+            db.close();
             callback("OK");
        });
     });
-    /* 
-    Record.findOne({"_id":id}, function(err, record){
-    console.log("The records is " + record);
-    param = {};
-    param[field] = value;
-        record.update({$set: param}, {upsert:false}, function(err, result) {
-            if (err) {
-                console.log(err);
-                return handleError(err);
-            }
-            record.markModified(field);
-            console.log(record.modifiedPaths() );
-            record.save();
-            console.log("OK");
-            callback("OK");
-        });
-    });
-    */
 }
-
-var recordSchema = mongoose.Schema({
-    object : mongoose.Schema.Types.Mixed
-}, {collection: "records"});
-
-var Record = mongoose.model("Record", recordSchema);
-
-var listSchema = mongoose.Schema({
-    name: String,
-    user: String,
-    public: Boolean,
-    fields: Array,
-    filters: Object
-}, {collection: "lists"});
-
-var List = mongoose.model("List", listSchema);
-
-var categorySchema = mongoose.Schema({
-    name: String,
-    user: String,
-    public: Boolean,
-    fields: Array
-}, {collection: "categories"});
-
-var Category = mongoose.model("Category", categorySchema);
-
-var userSchema = mongoose.Schema({
-    facebookId: String,
-    username: String
-}, {collection: "users"});
-
-var User = mongoose.model("User", userSchema);
-
-var thingSchema = mongoose.Schema({
-    name: String,
-    category: String,
-    contents: Array
-}, {collection: "things"});
-
-var Thing = mongoose.model("Thing", thingSchema);
-
-mongoose.connect("mongodb://localhost/coleta");
