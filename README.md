@@ -1,4 +1,4 @@
 coleta
 ======
 
-A site for collector collecting things.
+A site for collectors collecting things.
