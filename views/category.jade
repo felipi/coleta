@@ -19,7 +19,7 @@ block content
                     console.log(data);
             }); 
              return(value);
-         });
+         }, {submit:"OK", tooltip:"Click to edit..."});
         });
 
   span
@@ -42,7 +42,7 @@ block content
        
         tbody
             - for record in records
-              - var _id = JSON.parse(JSON.stringify(record))['_id']
+              - var _id = record['_id']
                 tr(id=_id) 
                     - for field in fields
                         td(name=field)= JSON.parse(JSON.stringify(record))[field]
